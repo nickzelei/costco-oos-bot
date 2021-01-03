@@ -46,15 +46,19 @@ def check_inventory(url):
     if check_item_in_stock(page_html):
         print("Item is in stock!")
         send_notification()
+        return True
     else:
         print("Item is out of stock... :(")
+        return False
 
 
 def main():
     load_dotenv(os.path.join(os.path.expanduser(os.getcwd()), '.env'))
     while True:
-        check_inventory(PAGE_URL)
-        time.sleep(60)
+        if check_inventory(PAGE_URL):
+            break
+        else:
+            time.sleep(60)
 
 
 if __name__ == "__main__":

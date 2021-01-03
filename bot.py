@@ -9,7 +9,6 @@ from dotenv import load_dotenv
 
 USER_AGENT = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
 PAGE_URL = "https://www.costco.com/xbox-series-x-1tb-console-with-additional-controller.product.100691493.html"
-# PAGE_URL = "https://www.costco.com/nintendo-eshop-%2450-digital-card-.product.100431276.html"
 
 
 def get_twilio_client():

@@ -1,4 +1,5 @@
 import time
+from datetime import datetime
 import os
 
 import requests
@@ -47,7 +48,7 @@ def check_inventory(url):
         send_notification()
         return True
     else:
-        print("Item is out of stock... :(")
+        print("{} - Item is out of stock... :(".format(datetime.now()))
         return False
 
 

@@ -26,3 +26,5 @@ python3 bot.py
 ```
 
 Update `PAGE_URL` in the script to change the page to ping.
+
+Based off of [this blog post](https://aryaboudaie.com/python/technical/educational/2020/07/05/using-python-to-buy-a-gift.html)
